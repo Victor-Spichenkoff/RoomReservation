@@ -33,16 +33,18 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
-# Copia tudo
+# Copia apenas os csproj (cache friendly)
+COPY RoomReservation.API/RoomReservation.API.csproj RoomReservation.API/
+COPY RoomReservation.Application/RoomReservation.Application.csproj RoomReservation.Application/
+COPY RoomReservation.Infrastructure/RoomReservation.Infrastructure.csproj RoomReservation.Infrastructure/
+COPY RoomReservation.Domain/RoomReservation.Domain.csproj RoomReservation.Domain/
+
+RUN dotnet restore "RoomReservation.API/RoomReservation.API.csproj"
+
+# Copia o resto
 COPY . .
 
-# Restaura o projeto da API
 WORKDIR "/src/RoomReservation.API"
-#RUN dotnet restore
-
-RUN dotnet restore "/src/RoomReservation.API/RoomReservation.API.csproj"
-
-# Build
 RUN dotnet build -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
