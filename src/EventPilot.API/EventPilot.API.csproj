@@ -24,9 +24,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\RoomReservation.Application\RoomReservation.Application.csproj" />
-      <ProjectReference Include="..\RoomReservation.Domain\RoomReservation.Domain.csproj" />
-      <ProjectReference Include="..\RoomReservation.Infrastructure\RoomReservation.Infrastructure.csproj" />
+      <ProjectReference Include="..\EventPilot.Application\EventPilot.Application.csproj" />
+      <ProjectReference Include="..\EventPilot.Domain\EventPilot.Domain.csproj" />
+      <ProjectReference Include="..\EventPilot.Infrastructure\EventPilot.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

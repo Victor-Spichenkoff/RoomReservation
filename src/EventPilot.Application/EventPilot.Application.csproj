@@ -4,16 +4,16 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>RoomReservation.Application</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Config\" />
-      <Folder Include="Context\" />
-      <Folder Include="Repositories\" />
+      <Folder Include="DTOs\" />
+      <Folder Include="Interfaces\" />
+      <Folder Include="Validations\" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.0" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0" />
     </ItemGroup>
 

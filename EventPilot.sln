@@ -6,13 +6,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		compose.yaml = compose.yaml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomReservation.API", "src\RoomReservation.API\RoomReservation.API.csproj", "{1ECE652E-9F22-4CD8-A0BA-A9349BBE148B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventPilot.API", "src\EventPilot.API\EventPilot.API.csproj", "{1ECE652E-9F22-4CD8-A0BA-A9349BBE148B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomReservation.Application", "src\RoomReservation.Application\RoomReservation.Application.csproj", "{766CED26-D3B2-48AB-85D0-97D58DCE8A9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventPilot.Application", "src\EventPilot.Application\EventPilot.Application.csproj", "{766CED26-D3B2-48AB-85D0-97D58DCE8A9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomReservation.Domain", "src\RoomReservation.Domain\RoomReservation.Domain.csproj", "{5A1D91DD-7125-4EC1-946B-9ABCABEC5AA6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventPilot.Domain", "src\EventPilot.Domain\EventPilot.Domain.csproj", "{5A1D91DD-7125-4EC1-946B-9ABCABEC5AA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomReservation.Infrastructure", "src\RoomReservation.Infrastructure\RoomReservation.Infrastructure.csproj", "{902A49AC-AD73-431F-9B3C-ABD337B7C33D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventPilot.Infrastructure", "src\EventPilot.Infrastructure\EventPilot.Infrastructure.csproj", "{902A49AC-AD73-431F-9B3C-ABD337B7C33D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "tests\UnitTests\UnitTests.csproj", "{BD32A471-B81B-4E1F-A059-CFEA06966D07}"
 EndProject
