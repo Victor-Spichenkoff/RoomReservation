@@ -1,4 +1,4 @@
-namespace RoomReservation.Application.Services;
+namespace EventPilot.Application.Services;
 
 public class TestService
 {

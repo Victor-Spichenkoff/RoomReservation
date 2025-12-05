@@ -1,7 +1,7 @@
+using EventPilot.Application.Services;
 using Microsoft.Extensions.DependencyInjection;
-using RoomReservation.Application.Services;
 
-namespace RoomReservation.Application;
+namespace EventPilot.Application;
 
 public static class DependencyInjectionExtension
 {

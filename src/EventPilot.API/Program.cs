@@ -1,6 +1,6 @@
-using RoomReservation.Application;
-using RoomReservation.Extensions;
-using RoomReservation.Infrastructure;
+using EventPilot.Application;
+using EventPilot.Extensions;
+using EventPilot.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 

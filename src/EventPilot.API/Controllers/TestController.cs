@@ -1,7 +1,7 @@
+using EventPilot.Application.Services;
 using Microsoft.AspNetCore.Mvc;
-using RoomReservation.Application.Services;
 
-namespace RoomReservation.Controllers;
+namespace EventPilot.Controllers;
 
 [ApiController]
 [Route("[controller]")]

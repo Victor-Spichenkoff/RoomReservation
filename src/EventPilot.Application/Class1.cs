@@ -1,4 +1,4 @@
-﻿namespace RoomReservation.Application;
+﻿namespace EventPilot.Application;
 
 public class Class1
 {

@@ -1,4 +1,4 @@
-namespace RoomReservation;
+namespace EventPilot;
 
 public class WeatherForecast
 {

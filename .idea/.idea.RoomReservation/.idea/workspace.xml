@@ -14,31 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RoomReservation/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RoomReservation/.idea/projectSettingsUpdater.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RoomReservation/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RoomReservation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RoomReservation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RoomReservation.sln" beforeDir="false" afterPath="$PROJECT_DIR$/EventPilot.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.API/Controllers/TestController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/TestController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.API/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.API/Extensions/AddPresentation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.API/Extensions/UseSwaggerDocumentation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/UseSwaggerDocumentation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.API/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.API/RoomReservation.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/EventPilot.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.API/RoomReservation.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/RoomReservation.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.API/WeatherForecast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/WeatherForecast.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.API/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.Application/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Class1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.Application/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.Application/RoomReservation.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/EventPilot.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.Application/Services/TestService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Services/TestService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.Domain/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Class1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.Domain/RoomReservation.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Domain/EventPilot.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.Infrastructure/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Class1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoomReservation.Infrastructure/RoomReservation.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/EventPilot.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +223,7 @@
       <workItem from="1764454415127" duration="6703000" />
       <workItem from="1764512944957" duration="594000" />
       <workItem from="1764603463184" duration="919000" />
-      <workItem from="1764945416004" duration="1055000" />
+      <workItem from="1764945416004" duration="1528000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-namespace RoomReservation.Extensions;
+namespace EventPilot.Extensions;
 
 /*
  * The father's name don't matter

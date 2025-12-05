@@ -1,4 +1,4 @@
-﻿namespace RoomReservation.Domain;
+﻿namespace EventPilot.Domain;
 
 public class Class1
 {

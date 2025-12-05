@@ -1,4 +1,4 @@
-namespace RoomReservation.Extensions;
+namespace EventPilot.Extensions;
 
 public static class UseSwaggerDocumentationExtension
 {

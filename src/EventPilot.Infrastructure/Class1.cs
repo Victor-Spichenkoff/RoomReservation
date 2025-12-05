@@ -1,4 +1,4 @@
-﻿namespace RoomReservation.Infrastructure;
+﻿namespace EventPilot.Infrastructure;
 
 public class Class1
 {
