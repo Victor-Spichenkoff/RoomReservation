@@ -7,9 +7,4 @@
         <RootNamespace>EventPilot.Domain</RootNamespace>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Folder Include="Entities\" />
-      <Folder Include="ValueObjects\" />
-    </ItemGroup>
-
 </Project>

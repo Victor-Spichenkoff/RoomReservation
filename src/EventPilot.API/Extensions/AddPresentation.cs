@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+
 namespace EventPilot.Extensions;
 
 /*
@@ -7,7 +9,11 @@ public static class AddPresentationExtension
 {
     public static IServiceCollection AddPresentation(this IServiceCollection services)
     {
-        services.AddControllers();
+        services.AddControllers()
+            .AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+            });;
         
         services.AddEndpointsApiExplorer(); 
         services.AddSwaggerGen();
