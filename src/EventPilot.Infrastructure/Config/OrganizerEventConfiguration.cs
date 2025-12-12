@@ -8,6 +8,17 @@ public class OrganizerEventConfiguration: IEntityTypeConfiguration<OrganizerEven
 {
     public void Configure(EntityTypeBuilder<OrganizerEvent> builder)
     {
+        builder
+            .HasKey(oe => new { oe.EventId, oe.UserId });
+
+        builder
+            .HasOne(oe => oe.Event)
+            .WithMany(e => e.OrganizerEvents)
+            .HasForeignKey(oe => oe.EventId);
         
+        builder
+            .HasOne(oe => oe.User)
+            .WithMany(u => u.OrganizerEvents)
+            .HasForeignKey(oe => oe.UserId);
     }
 }

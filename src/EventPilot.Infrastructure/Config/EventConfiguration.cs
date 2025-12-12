@@ -1,6 +1,7 @@
 using EventPilot.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore.ValueGeneration;
 
 namespace EventPilot.Infrastructure.Config;
 
@@ -11,5 +12,10 @@ public class EventConfiguration: IEntityTypeConfiguration<Event>
         builder
             .Property(e => e.Status)
             .HasConversion<int>();
+
+        builder
+            .Property(e => e.CreationDate)
+            .HasDefaultValueSql("GETDATE()")
+            .ValueGeneratedOnAdd();
     }
 }

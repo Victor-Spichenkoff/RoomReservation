@@ -11,10 +11,10 @@ public class Event
     public DateTime StartDate { get; set; }
     public DateTime EndDate { get; set; }
     public int TotalCapacity { get; set; }
-    //TODO: CREATE THIS:
     public EventStatus Status { get; set; }
     public DateTime CreationDate { get; set; }
     
-    
-    public ICollection<Registration> Registrations { get; set; } = null!;
+    public ICollection<Session> Sessions { get; set; } = new List<Session>();
+    public ICollection<EventRegistration> EventRegistrations { get; set; } = null!;
+    public ICollection<OrganizerEvent> OrganizerEvents { get; set; } = new List<OrganizerEvent>();
 }

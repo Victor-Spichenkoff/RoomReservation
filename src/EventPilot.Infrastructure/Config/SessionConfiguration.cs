@@ -8,6 +8,9 @@ public class SessionConfiguration: IEntityTypeConfiguration<Session>
 {
     public void Configure(EntityTypeBuilder<Session> builder)
     {
-        
+        builder
+            .HasOne(s => s.Event)
+            .WithMany(e => e.Sessions)
+            .HasForeignKey(s => s.EventId);
     }
 }

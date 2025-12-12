@@ -1,3 +1,5 @@
+using EventPilot.Infrastructure.Context;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 
@@ -10,6 +12,10 @@ public static class DependencyInjectionExtension
             IConfiguration config
         )
     {
+        services.AddDbContext<AppDbContext>(options =>
+            options.UseSqlite(config.GetConnectionString("Default")));
+        
+        //Repositories Here
         
         return services;
     }

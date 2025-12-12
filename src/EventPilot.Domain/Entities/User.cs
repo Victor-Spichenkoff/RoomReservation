@@ -10,5 +10,6 @@ public class User
     public string Password { get; set; } = String.Empty;
     public Roles Role { get; set; } = Roles.User;
     
-    public ICollection<Registration> Registrations { get; set; } = new List<Registration>();
+    public ICollection<EventRegistration> EventRegistrations { get; set; } = new List<EventRegistration>();
+    public ICollection<OrganizerEvent> OrganizerEvents { get; set; } = new List<OrganizerEvent>();
 }

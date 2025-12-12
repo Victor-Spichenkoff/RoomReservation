@@ -2,7 +2,7 @@ using EventPilot.Domain.ValueObjects;
 
 namespace EventPilot.Domain.Entities;
 
-public class Registration
+public class EventRegistration
 {
     public long Id { get; set; }
     public DateTime RegistrationDate { get; set; }
@@ -13,9 +13,11 @@ public class Registration
     public long UserId { get; set; }
     public required User User { get; set; }
 
+    public ICollection<Certificate> Certificates { get; set; } = new List<Certificate>();
+    public ICollection<CheckIn> CheckIns { get; set; } = new List<CheckIn>();
+    public ICollection<SessionRegistration> SessionRegistrations { get; set; } = new List<SessionRegistration>();
     
-    
-    public Registration(Code code)
+    public EventRegistration(Code code)
     {
         Code = code;
     }

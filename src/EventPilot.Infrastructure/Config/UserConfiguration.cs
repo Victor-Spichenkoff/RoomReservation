@@ -11,5 +11,9 @@ public class UserConfiguration: IEntityTypeConfiguration<User>
         builder
             .Property(p => p.Role)
             .HasConversion<int>();
+        
+        builder
+            .HasIndex(p => p.Email)
+            .IsUnique();
     }
 }

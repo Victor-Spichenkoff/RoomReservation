@@ -2,15 +2,14 @@ using EventPilot.Domain.Enum;
 
 namespace EventPilot.Domain.Entities;
 
-public class CheckIn
+public class SessionRegistration
 {
     public long SessionId { get; set; }
     public Session Session { get; set; } = null!;
-
-    public long RegistrationId { get; set; }
+    
+    public long EventRegistrationId { get; set; }
     public EventRegistration EventRegistration { get; set; } = null!;
     
-    // extra data
-    public DateTime CheckInDate { get; set; }
-    public CheckInOrigin CheckInOrigin { get; set; }
+    public DateTime RegistrationDate { get; set; }
+    public SessionRegistrationStatus Status { get; set; }
 }
