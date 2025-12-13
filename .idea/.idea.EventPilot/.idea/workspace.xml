@@ -16,35 +16,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Interfaces/Repositories/IUserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Enum/SessionRegistrationStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Exceptions/GenericApiException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Context/AppDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Repositories/UserRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DEV.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/UseMiddlewares.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.API/Middlewares/ExceptionHandlingMiddleware.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Exceptions/ApiException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Exceptions/BusinessException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Exceptions/DomainException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Exceptions/NotFoundException.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Controllers/TestController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/TestController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.API/EventPilot.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/EventPilot.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/EventPilot.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/EventPilot.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/Certificate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/Certificate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/CheckIn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/CheckIn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/Event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/Event.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/OrganizerEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/OrganizerEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/Registration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/EventRegistration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/RegistrationSession.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/SessionRegistration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/Session.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/Session.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/CertificateConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/CertificateConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/CheckInConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/CheckInConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/EventConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/EventConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/OrganizerEventConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/OrganizerEventConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/RegistrationConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/EventRegistrationConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/RegistrationSessionConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/SessionRegistrationConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/SessionConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/SessionConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/UserConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/UserConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Context/AppContext.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/EventPilot.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/EventPilot.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Extensions/UseSwaggerDocumentation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/UseMiddlewaresExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/Exceptions/GenericApiException.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,24 +57,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.RoomReservation.API: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.RoomReservation: http.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.EventPilot.API: http.executor": "Run",
+    ".NET Launch Settings Profile.RoomReservation.API: http.executor": "Run",
+    ".NET Launch Settings Profile.RoomReservation: http.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.RoomReservation.API: http">
+}]]></component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.EventPilot.API: http">
     <configuration name="EventPilot.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/EventPilot.API/EventPilot.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
@@ -288,7 +274,10 @@
       <workItem from="1765397562248" duration="4080000" />
       <workItem from="1765416546314" duration="2817000" />
       <workItem from="1765455707909" duration="8251000" />
-      <workItem from="1765489648195" duration="4298000" />
+      <workItem from="1765489648195" duration="5124000" />
+      <workItem from="1765544767133" duration="6506000" />
+      <workItem from="1765572821493" duration="5301000" />
+      <workItem from="1765641337406" duration="3980000" />
     </task>
     <servers />
   </component>
