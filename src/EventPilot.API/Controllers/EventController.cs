@@ -3,6 +3,7 @@ using EventPilot.Application.DTOs.Responses;
 using EventPilot.Application.Interfaces.Repositories;
 using EventPilot.Application.Services;
 using EventPilot.Domain.Entities;
+using EventPilot.Domain.Exceptions;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,10 +16,8 @@ public class EventsController(EventService eventService) : ControllerBase
     private readonly EventService _eventService = eventService;
 
     [HttpGet]
-    public ICollection<Event> Get()
-    {
-        throw new NotImplementedException();
-    }
+    public async Task<ActionResult<ICollection<EventResponseDto>>> Get([FromQuery] int page = 0)
+        => Ok(await _eventService.GetPaged(page));
 
     [HttpGet("{id}")]
     public async Task<ActionResult<EventResponseDto>> GetEventById(long id)
@@ -30,7 +29,26 @@ public class EventsController(EventService eventService) : ControllerBase
     [HttpPost]
     public async Task<ActionResult<EventResponseDto>> CreateEvent([FromBody] CreateEventDto eventDto)
     {
-        var createdEvent = await _eventService.CreateEventAsync(eventDto);
-        return Ok(createdEvent.Adapt<EventResponseDto>());
+        return Ok(await _eventService.CreateEventAsync(eventDto));
     }
+    
+    
+    [ProducesResponseType(typeof(EventResponseDto), 200)]
+    [HttpPut("{id}")]
+    public async Task<ActionResult<EventResponseDto>> UpdateEvent([FromBody] UpdateEventDto eventDto, long id)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+            // throw new BusinessException(ModelState.)
+            
+        return Ok(await _eventService.UpdateEventAsync(eventDto, id));
+    }
+    
+    [ProducesResponseType(typeof(EventResponseDto), 200)]
+    [HttpPatch("{id}")]
+    public async Task<ActionResult<EventResponseDto>> PatchEvent([FromBody] PatchEventDto eventDto, long id)
+    {
+        return Ok(await _eventService.PatchEventAsync(eventDto, id));
+    }
+    
 }

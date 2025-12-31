@@ -16,16 +16,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddMappingConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/PatchEventDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/UpdateEventDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Mapping/EventMappingConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/EventPilot.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/EventPilot.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Middlewares/ExceptionHandlingMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Middlewares/ExceptionHandlingMiddleware.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/EventPilot.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/EventPilot.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/CreateEventDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/CreateEventDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Responses/EventResponseDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/EventResponseDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Interfaces/Repositories/IEventRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Interfaces/Repositories/IEventRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/CertificateConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/CertificateConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/EventConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/EventConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/CheckIn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/CheckIn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/Event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/Event.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/SessionRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/SessionRegistration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Repositories/EventRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Repositories/EventRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,7 +304,13 @@
       <workItem from="1766492769255" duration="7054000" />
       <workItem from="1766537712336" duration="3565000" />
       <workItem from="1766838367171" duration="2397000" />
-      <workItem from="1766873077627" duration="4988000" />
+      <workItem from="1766873077627" duration="5302000" />
+      <workItem from="1766944773243" duration="4164000" />
+      <workItem from="1766970831413" duration="1777000" />
+      <workItem from="1767013797404" duration="7081000" />
+      <workItem from="1767042125849" duration="5543000" />
+      <workItem from="1767096296521" duration="7845000" />
+      <workItem from="1767129936299" duration="8508000" />
     </task>
     <servers />
   </component>
@@ -307,5 +320,24 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/EventPilot.Application/Mapping/EventMappingConfig.cs</url>
+          <line>11</line>
+          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\src\EventPilot.Application\Mapping\EventMappingConfig.cs" containingFunctionPresentation="Method 'Register'">
+            <startOffsets>
+              <option value="278" />
+            </startOffsets>
+            <endOffsets>
+              <option value="356" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

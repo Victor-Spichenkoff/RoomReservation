@@ -12,5 +12,5 @@ public class CheckIn
     
     // extra data
     public DateTime CheckInDate { get; set; }
-    public CheckInOrigin CheckInOrigin { get; set; }
+    public CheckInOrigin CheckInOrigin { get; set; } = CheckInOrigin.Online;
 }

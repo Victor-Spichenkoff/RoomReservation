@@ -11,7 +11,7 @@ public class Event
     public DateTime StartDate { get; set; }
     public DateTime EndDate { get; set; }
     public int? TotalCapacity { get; set; }
-    public EventStatus Status { get; set; }
+    public EventStatus Status { get; set; } = EventStatus.Sketch;
     public DateTime CreationDate { get; set; }
     
     public ICollection<Session> Sessions { get; set; } = new List<Session>();

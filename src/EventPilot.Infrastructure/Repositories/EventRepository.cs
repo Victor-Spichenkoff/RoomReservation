@@ -2,6 +2,7 @@ using EventPilot.Application.Interfaces.Repositories;
 using EventPilot.Domain.Entities;
 using EventPilot.Domain.Enum;
 using EventPilot.Infrastructure.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace EventPilot.Infrastructure.Repositories;
 
@@ -14,16 +15,19 @@ public class EventRepository(AppDbContext context) : IEventRepository
         return await _context.Events.FindAsync(id);
     }
 
-    public async Task<Event> CreateAsync(Event entity)
+    public async Task<Event> CreateAsync(Event eventData)
     {
-        var createdEntity = await _context.Events.AddAsync(entity);
-        var result = await _context.SaveChangesAsync();
+        var createdEntity = await _context.Events.AddAsync(eventData);
+        await _context.SaveChangesAsync();
         return createdEntity.Entity;
     }
 
-    public Task<Event> UpdateAsync(Event entity)
+    public async Task<Event> UpdateAsync(Event eventData)
     {
-        throw new NotImplementedException();
+        var updatedEntity = _context.Events.Update(eventData);
+        await _context.SaveChangesAsync();
+        
+        return updatedEntity.Entity;
     }
 
     public bool DeleteByIdAsync(long id)
@@ -31,8 +35,12 @@ public class EventRepository(AppDbContext context) : IEventRepository
         throw new NotImplementedException();
     }
 
-    public Task<ICollection<Event>> Get(int? page, int? pageSize, int? skip)
-    {
-        throw new NotImplementedException();
-    }
+    // public IQueryable<Event> Query()
+    //  => _context.Events;
+    //  // => _context.Events.AsNoTracking();
+
+    public async Task<ICollection<Event>> Get(int page=0, int pageSize=10)
+    => await _context.Events.Skip(page * pageSize)
+        .Take(pageSize)
+        .ToListAsync();
 }

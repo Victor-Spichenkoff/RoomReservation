@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using Mapster;
 
 namespace EventPilot.Extensions;
 
@@ -20,6 +21,9 @@ public static class AddPresentationExtension
         
         services.AddEndpointsApiExplorer(); 
         services.AddSwaggerGen();
+        
+        services.AddMapster();
+        services.AddMapping(); // My mapping config
 
         return services;
     }

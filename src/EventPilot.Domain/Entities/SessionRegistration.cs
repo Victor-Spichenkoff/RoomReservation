@@ -11,5 +11,5 @@ public class SessionRegistration
     public EventRegistration EventRegistration { get; set; } = null!;
     
     public DateTime RegistrationDate { get; set; }
-    public SessionRegistrationStatus Status { get; set; }
+    public SessionRegistrationStatus Status { get; set; } = SessionRegistrationStatus.Confirmed;
 }
