@@ -4,21 +4,27 @@ using EventPilot.Domain.ValueObjects;
 
 namespace EventPilot.Application.DTOs.Event;
 
-public class PatchEventDto
+public class PatchEventDto : EventBaseDto
 {
-    public string? Name {get; set;}
+    public bool? ClearDescription { get; set; } = false;
+    public bool? ClearTotalCapacity { get; set; } = false;
     
-    public string? Location {get; set;}
-    
-    public string? Description {get; set;}
-    public bool ClearDescription { get; set; } = false;
-    
-    public DateTime? StartDate { get; set; }
-    
-    public DateTime? EndDate { get; set; }
-    
-    public int? TotalCapacity { get; set; }
-    public bool ClearTotalCapacity { get; set; } = false;
-    
-    public EventStatus? Status { get; set; }
 }
+// public class PatchEventDto
+// {
+//     public string? Name {get; set;}
+//     
+//     public string? Location {get; set;}
+//     
+//     public string? Description {get; set;}
+//     public bool ClearDescription { get; set; } = false;
+//     
+//     public DateTime? StartDate { get; set; }
+//     
+//     public DateTime? EndDate { get; set; }
+//     
+//     public int? TotalCapacity { get; set; }
+//     public bool ClearTotalCapacity { get; set; } = false;
+//     
+//     public EventStatus? Status { get; set; }
+// }

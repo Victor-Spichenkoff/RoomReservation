@@ -2,6 +2,7 @@ using EventPilot.Application.DTOs.Event;
 using EventPilot.Application.DTOs.Responses;
 using EventPilot.Application.Interfaces.Repositories;
 using EventPilot.Domain.Entities;
+using EventPilot.Domain.Enum;
 using EventPilot.Domain.Exceptions;
 using Mapster;
 
@@ -26,10 +27,11 @@ public class EventService(IEventRepository eventRepository)
         return eventFromDb.Adapt<EventResponseDto>();
     }
 
-    public async Task<EventResponseDto?>  CreateEventAsync(CreateEventDto dto)
+    public async Task<EventResponseDto?>  CreateEventAsync(CreateEventDto eventDto)
     {
-        //TODO
-        var eventToCreate = dto.Adapt<Event>();
+        ValidateStatusEnum(eventDto.Status);
+        
+        var eventToCreate = eventDto.Adapt<Event>();
         var createdEvent = await _eventRepository.CreateAsync(eventToCreate);
         return createdEvent.Adapt<EventResponseDto>();
     }
@@ -39,6 +41,7 @@ public class EventService(IEventRepository eventRepository)
         var eventToUpdate = await _eventRepository.GetByIdAsync(id);
         if(eventToUpdate == null)
             throw new NotFoundException("Event not found");
+        ValidateStatusEnum(eventDto.Status);
         
         var newEvent = eventDto.Adapt(eventToUpdate);
         if(newEvent == null)
@@ -59,6 +62,7 @@ public class EventService(IEventRepository eventRepository)
         var eventToUpdate = await _eventRepository.GetByIdAsync(id);
         if(eventToUpdate == null)
             throw new NotFoundException("Event not found");
+        ValidateStatusEnum(eventDto.Status);
         
         // var newEvent =  eventDto.Adapt(eventToUpdate);
         eventDto.Adapt(eventToUpdate);
@@ -73,5 +77,13 @@ public class EventService(IEventRepository eventRepository)
 
         var updateEvent = await _eventRepository.UpdateAsync(eventToUpdate);
         return updateEvent.Adapt<EventResponseDto>();
+    }
+
+
+    // Support
+    private void ValidateStatusEnum(EventStatus? status)
+    {
+        if (status != null && !Enum.IsDefined(typeof(EventStatus), status))
+            throw new BusinessException("Invalid Status");
     }
 }

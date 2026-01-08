@@ -9,7 +9,6 @@
 
     <ItemGroup>
       <Folder Include="Mapping\Adapters\" />
-      <Folder Include="Validations\" />
     </ItemGroup>
 
     <ItemGroup>

@@ -1,0 +1,28 @@
+using EventPilot.Application.DTOs.Event;
+using FluentValidation;
+
+namespace EventPilot.Application.Validators.Event;
+
+public class EventBaseDtoValidator<T> : AbstractValidator<T>
+    where T : EventBaseDto
+{
+    protected void ValidateName()
+    {
+        RuleFor(x => x.Name)
+            .MinimumLength(2).WithMessage("Name must be at least 2 characters long")
+            .MaximumLength(100).WithMessage("Name cannot exceed 100 characters");
+    }
+    
+    protected void ValidateLocation()
+    {
+        RuleFor(x => x.Location)
+            .MinimumLength(2).WithMessage("Location must be at least 2 characters long");
+    }
+
+    protected void ValidateDescription()
+    {
+        RuleFor(x => x.Description)
+            .MaximumLength(250)
+            .WithMessage("Description must be less than 250 characters");
+    }
+}

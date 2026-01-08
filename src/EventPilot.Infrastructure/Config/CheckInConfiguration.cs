@@ -1,4 +1,5 @@
     using EventPilot.Domain.Entities;
+    using EventPilot.Domain.Enum;
     using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -8,6 +9,18 @@ public class CheckInConfiguration: IEntityTypeConfiguration<CheckIn>
 {
     public void Configure(EntityTypeBuilder<CheckIn> builder)
     {
+        var validStatuses = string.Join(
+            ",",
+            Enum.GetValues<CheckInOrigin>().Select(x => (int)x)
+        );
+
+        builder.ToTable(t =>
+            t.HasCheckConstraint(
+                "CK_CheIn_CheckInOrigin",
+                $"[CheckInOrigin] IN ({validStatuses})"
+            )
+        );
+        
         builder
             .HasKey(c => new { c.RegistrationId, c.SessionId });
 

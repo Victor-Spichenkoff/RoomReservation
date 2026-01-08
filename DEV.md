@@ -3,6 +3,13 @@
 - [ ] Test it changes validations on swagger compare with DA 
 - [ ] Fluent Validation + Data Annotation, como integrar as formas de lidar com erros
 
+- DOU OVERRIDE DO START DATE PARA PODER SER NO PASSADO NO UODATE?
+
+Nesse cenário, o que fazer no ASP.NET em API:
+- DTO de create e put são identicos, mesma validação e no fim também é tudo obrigatório
+- DTO de patch é identico a esses, mas com tudo opcional. Porém as valiações base segue (minLengh, Email...)
+
+APIS profissionais, usando arquitetura em camadas
 
 
 - [ ] Como criar testes para detectar nulls no patch trabalhando bem
