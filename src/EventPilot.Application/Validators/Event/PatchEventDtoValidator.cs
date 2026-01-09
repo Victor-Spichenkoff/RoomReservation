@@ -10,5 +10,8 @@ public class PatchEventDtoValidator : EventBaseDtoValidator<EventBaseDto>
         When(x => x.Name != null, ValidateName);
         When(x => x.Description != null, ValidateDescription);
         When(x => x.Location != null, ValidateLocation);
+        When(x => x.Status != null, ValidateStatus);
+        When(x => x.EndDate != null && x.StartDate != null, ValidateEndDateBiggerThanStartDate);
+        
     }
 }

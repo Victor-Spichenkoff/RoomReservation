@@ -25,4 +25,16 @@ public class EventBaseDtoValidator<T> : AbstractValidator<T>
             .MaximumLength(250)
             .WithMessage("Description must be less than 250 characters");
     }
+    
+    protected void ValidateStatus()
+    {
+        RuleFor(x => x.Status)
+            .IsInEnum().WithMessage("Invalid status");
+    }
+
+    protected void ValidateEndDateBiggerThanStartDate()
+    {
+        RuleFor(x => x.EndDate)
+            .GreaterThan(x => x.StartDate).WithMessage("Start date can't be bigger than end date");
+    }
 }

@@ -25,7 +25,7 @@ public static class AdModelStateConfigurationExtension
 
                 var response = new ErrorResponse
                 {
-                    Title = "validation_error",
+                    Title = "Validation Error",
                     Status = 400,
                     Instance = context.HttpContext.Request.Path.Value,
                     Errors = [..errors]
