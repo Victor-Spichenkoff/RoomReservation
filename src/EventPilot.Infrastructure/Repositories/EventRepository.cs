@@ -30,9 +30,10 @@ public class EventRepository(AppDbContext context) : IEventRepository
         return updatedEntity.Entity;
     }
 
-    public bool DeleteByIdAsync(long id)
+    public async Task<bool> DeleteByIdAsync(Event eventToDelete)
     {
-        throw new NotImplementedException();
+        _context.Events.Remove(eventToDelete);
+        return ( await _context.SaveChangesAsync()) > 0;
     }
 
     // public IQueryable<Event> Query()

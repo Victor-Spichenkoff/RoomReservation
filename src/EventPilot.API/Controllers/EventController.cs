@@ -50,5 +50,15 @@ public class EventsController(EventService eventService) : ControllerBase
     {
         return Ok(await _eventService.PatchEventAsync(eventDto, id));
     }
+
+
+    [ProducesResponseType(204)]
+    [ProducesResponseType(400)]
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteEvent(long id)
+    {
+        await _eventService.DeleteEventAsync(id);
+        return NoContent();
+    }
     
 }

@@ -83,6 +83,16 @@ public class EventService(IEventRepository eventRepository)
         return updateEvent.Adapt<EventResponseDto>();
     }
 
+    public async Task<bool> DeleteEventAsync(long id)
+    {
+        var eventToDelete = await _eventRepository.GetByIdAsync(id);
+        
+        if(eventToDelete is null)
+            throw new NotFoundException("Event not found");
+        
+        return await _eventRepository.DeleteByIdAsync(eventToDelete);
+    }
+    
 
     // Support
     private void ValidateStatusEnum(EventStatus? status)
