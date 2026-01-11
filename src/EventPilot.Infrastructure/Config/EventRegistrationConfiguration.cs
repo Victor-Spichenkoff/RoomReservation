@@ -27,6 +27,11 @@ public class EventRegistrationConfiguration: IEntityTypeConfiguration<EventRegis
             .Property(r => r.Code)
             .HasConversion(codeConverter)
             .HasMaxLength(6); // XX-123
+        
+        builder
+            .HasIndex(r => r.Code)
+            .IsUnique();
+        
 
         builder
             .HasOne(r => r.Event)

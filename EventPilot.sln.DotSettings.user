@@ -7,5 +7,6 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::18780F43-DEC5-4E8F-B27F-9C58685E4D7C::net9.0::IntegrationTest.Controllers.Tests.ErrorHandler&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.ValueObjects.CodeTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.DTOs.Event.CreateEventDtoTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
