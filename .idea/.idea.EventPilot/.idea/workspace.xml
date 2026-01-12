@@ -16,14 +16,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/UnitTests/DTOs/Event/CreateEventDtoTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DEV.md" beforeDir="false" afterPath="$PROJECT_DIR$/DEV.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/EventRegistrationConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/EventRegistrationConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev2.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev2.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/IntegrationTests/IntegrationTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/tests/IntegrationTests/IntegrationTests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UnitTests/UnitTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/tests/UnitTests/UnitTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/CreateEventDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/EventDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/UpdateEventDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/UpdateEventDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/CreateEventDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/CreateEventDtoValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/EventBaseDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/EventBaseDtoValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/UpdateEventDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/UpdateEventDtoValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/UnitTests/DTOs/Event/CreateEventDtoTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/UnitTests/DTOs/EventDtoTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +44,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ad1d58b8dd22123dfae3f2cf5d8b199992465c9c344d032f93a826d8e5539ff/RuntimeType.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ad8b2779652854276d03ec153d51377686c7193799d1688e119272770d0cf/EqualityAsserts.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9878f643c2ecf1b4ce73234de56c9754a451c835620eae85ca8babbcb5889c4/LateBoundTestFramework.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/tests/IntegrationTests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -318,7 +322,10 @@
       <workItem from="1767961282249" duration="13887000" />
       <workItem from="1767996130188" duration="4873000" />
       <workItem from="1768049764472" duration="4836000" />
-      <workItem from="1768090080038" duration="4962000" />
+      <workItem from="1768090080038" duration="5308000" />
+      <workItem from="1768141075827" duration="2939000" />
+      <workItem from="1768151092688" duration="5498000" />
+      <workItem from="1768179713362" duration="4051000" />
     </task>
     <servers />
   </component>
@@ -330,6 +337,23 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/tests/UnitTests/DTOs/EventDtoTest.cs</url>
+          <line>78</line>
+          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\tests\UnitTests\DTOs\Event\CreateEventDtoTest.cs" containingFunctionPresentation="Method 'Should_Pass_When_StartDate_Is_In_Past_And_Is_UpdateDto'">
+            <startOffsets>
+              <option value="2265" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2298" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="LaunchSettings">
         <watch expression="this.&lt;eventToUpdate&gt;5__1.Status" />

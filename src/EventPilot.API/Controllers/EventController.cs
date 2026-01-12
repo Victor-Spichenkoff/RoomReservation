@@ -27,7 +27,7 @@ public class EventsController(EventService eventService) : ControllerBase
     
     [ProducesResponseType(typeof(EventResponseDto), 200)]
     [HttpPost]
-    public async Task<ActionResult<EventResponseDto>> CreateEvent([FromBody] CreateEventDto eventDto)
+    public async Task<ActionResult<EventResponseDto>> CreateEvent([FromBody] EventDto eventDto)
     {
         return Ok(await _eventService.CreateEventAsync(eventDto));
     }

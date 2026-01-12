@@ -4,5 +4,5 @@ using EventPilot.Domain.Enum;
 
 namespace EventPilot.Application.DTOs.Event;
 
-public class CreateEventDto : EventBaseDto
+public class EventDto : EventBaseDto
 { }

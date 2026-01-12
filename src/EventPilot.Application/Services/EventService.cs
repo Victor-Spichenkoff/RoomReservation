@@ -27,7 +27,7 @@ public class EventService(IEventRepository eventRepository)
         return eventFromDb.Adapt<EventResponseDto>();
     }
 
-    public async Task<EventResponseDto>  CreateEventAsync(CreateEventDto eventDto)
+    public async Task<EventResponseDto>  CreateEventAsync(EventDto eventDto)
     {
         ValidateStatusEnum(eventDto.Status);
         

@@ -6,21 +6,15 @@ namespace EventPilot.Application.Validators.Event;
 
 
 
-public class CreateEventDtoValidator: EventBaseDtoValidator<CreateEventDto>
+public class CreateEventDtoValidator: EventBaseDtoValidator<EventDto>
 {
     public CreateEventDtoValidator()
     {
-        RuleFor(x => x.Name)
-            .NotEmpty().WithMessage("Inform a name");
+        SetRequiredFieldsValidationOn();
+        
         
         RuleFor(x => x.StartDate)
-            .NotEmpty().NotNull().WithMessage("Inform a Start Date");
-        
-        RuleFor(x => x.EndDate)
-            .NotEmpty().NotNull().WithMessage("Inform a End Date");
-        
-        RuleFor(x => x.Status)
-            .NotEmpty().WithMessage("Inform a Status");
+            .GreaterThan(DateTime.Now).WithMessage("Start Date can't be in the past");
         
         
         ValidateName();

@@ -3,4 +3,18 @@ using FluentValidation;
 
 namespace EventPilot.Application.Validators.Event;
 
-public class UpdateEventDtoValidator: CreateEventDtoValidator{}
+public class UpdateEventDtoValidator : EventBaseDtoValidator<UpdateEventDto>
+{
+    public UpdateEventDtoValidator()
+    {
+        SetRequiredFieldsValidationOn();
+    
+        
+        ValidateName();
+        ValidateDescription();
+        ValidateDescription();
+        ValidateStatus();
+        ValidateEndDateBiggerThanStartDate();
+    }
+    
+}

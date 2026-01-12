@@ -37,4 +37,20 @@ public class EventBaseDtoValidator<T> : AbstractValidator<T>
         RuleFor(x => x.EndDate)
             .GreaterThan(x => x.StartDate).WithMessage("Start date can't be bigger than end date");
     }
+    
+
+    protected void SetRequiredFieldsValidationOn()
+    {
+        RuleFor(x => x.Name)
+            .NotEmpty().WithMessage("Inform a name");
+
+        RuleFor(x => x.StartDate)
+            .NotEmpty().WithMessage("Inform a Start Date");
+
+        RuleFor(x => x.EndDate)
+            .NotEmpty().NotNull().WithMessage("Inform a End Date");
+        
+        RuleFor(x => x.Status)
+            .NotEmpty().WithMessage("Inform a Status");
+    }
 }
